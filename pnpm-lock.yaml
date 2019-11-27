@@ -1,0 +1,133 @@
+dependencies:
+  async-redis: 1.1.7
+  socks-proxy-agent: 4.0.2
+  telegraf: 3.33.3
+lockfileVersion: 5.1
+packages:
+  /@types/node/12.12.14:
+    dev: false
+    resolution:
+      integrity: sha512-u/SJDyXwuihpwjXy7hOOghagLEV1KdAST6syfnOk6QZAMzZuWZqXy5aYYZbh8Jdpd4escVFP0MvftHNDb9pruA==
+  /agent-base/4.2.1:
+    dependencies:
+      es6-promisify: 5.0.0
+    dev: false
+    engines:
+      node: '>= 4.0.0'
+    resolution:
+      integrity: sha512-JVwXMr9nHYTUXsBFKUqhJwvlcYU/blreOEUkhNR2eXZIvwd+c+o5V4MgDPKWnMS/56awN3TRzIP+KoPn+roQtg==
+  /async-redis/1.1.7:
+    dependencies:
+      redis: 2.8.0
+      redis-commands: 1.5.0
+    dev: false
+    engines:
+      node: '>=7.6.0'
+    resolution:
+      integrity: sha512-phpZe2/U+Ih4Lpy72KWF4+c8gymsUgzg6NV/TZUb8BLNn7soQewFxqcq9nndobfPmzXiuhMLi6GNBiQVIor/EA==
+  /debug/4.1.1:
+    dependencies:
+      ms: 2.1.2
+    dev: false
+    resolution:
+      integrity: sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
+  /double-ended-queue/2.1.0-0:
+    dev: false
+    resolution:
+      integrity: sha1-ED01J/0xUo9AGIEwyEHv3XgmTlw=
+  /es6-promise/4.2.8:
+    dev: false
+    resolution:
+      integrity: sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
+  /es6-promisify/5.0.0:
+    dependencies:
+      es6-promise: 4.2.8
+    dev: false
+    resolution:
+      integrity: sha1-UQnWLz5W6pZ8S2NQWu8IKRyKUgM=
+  /ip/1.1.5:
+    dev: false
+    resolution:
+      integrity: sha1-vd7XARQpCCjAoDnnLvJfWq7ENUo=
+  /ms/2.1.2:
+    dev: false
+    resolution:
+      integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+  /node-fetch/2.6.0:
+    dev: false
+    engines:
+      node: 4.x || >=6.0.0
+    resolution:
+      integrity: sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+  /redis-commands/1.5.0:
+    dev: false
+    resolution:
+      integrity: sha512-6KxamqpZ468MeQC3bkWmCB1fp56XL64D4Kf0zJSwDZbVLLm7KFkoIcHrgRvQ+sk8dnhySs7+yBg94yIkAK7aJg==
+  /redis-parser/2.6.0:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-Uu0J2srBCPGmMcB+m2mUHnoZUEs=
+  /redis/2.8.0:
+    dependencies:
+      double-ended-queue: 2.1.0-0
+      redis-commands: 1.5.0
+      redis-parser: 2.6.0
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-M1OkonEQwtRmZv4tEWF2VgpG0JWJ8Fv1PhlgT5+B+uNq2cA3Rt1Yt/ryoR+vQNOQcIEgdCdfH0jr3bDpihAw1A==
+  /sandwich-stream/2.0.2:
+    dev: false
+    engines:
+      node: '>= 0.10'
+    resolution:
+      integrity: sha512-jLYV0DORrzY3xaz/S9ydJL6Iz7essZeAfnAavsJ+zsJGZ1MOnsS52yRjU3uF3pJa/lla7+wisp//fxOwOH8SKQ==
+  /smart-buffer/4.1.0:
+    dev: false
+    engines:
+      node: '>= 6.0.0'
+      npm: '>= 3.0.0'
+    resolution:
+      integrity: sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw==
+  /socks-proxy-agent/4.0.2:
+    dependencies:
+      agent-base: 4.2.1
+      socks: 2.3.3
+    dev: false
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-NT6syHhI9LmuEMSK6Kd2V7gNv5KFZoLE7V5udWmn0de+3Mkj3UMA/AJPLyeNUVmElCurSHtUdM3ETpR3z770Wg==
+  /socks/2.3.3:
+    dependencies:
+      ip: 1.1.5
+      smart-buffer: 4.1.0
+    dev: false
+    engines:
+      node: '>= 6.0.0'
+      npm: '>= 3.0.0'
+    resolution:
+      integrity: sha512-o5t52PCNtVdiOvzMry7wU4aOqYWL0PeCXRWBEiJow4/i/wr+wpsJQ9awEu1EonLIqsfGd5qSgDdxEOvCdmBEpA==
+  /telegraf/3.33.3:
+    dependencies:
+      '@types/node': 12.12.14
+      debug: 4.1.1
+      node-fetch: 2.6.0
+      sandwich-stream: 2.0.2
+      telegram-typings: 3.6.1
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-ItSAeE9OjFH+X0rS8DeErccoUZRy2hBl+mDjFWDqyZWyRElxA5L178UpJV7tM6hCVN/leFY+9orfra2JtX4AyQ==
+  /telegram-typings/3.6.1:
+    dev: false
+    resolution:
+      integrity: sha512-njVv1EAhIZnmQVLocZEADYUyqA1WIXuVcDYlsp+mXua/XB0pxx+PKtMSPeZ/EE4wPWTw9h/hA9ASTT6yQelkiw==
+specifiers:
+  async-redis: ^1.1.7
+  socks-proxy-agent: ^4.0.2
+  telegraf: ^3.33.3
