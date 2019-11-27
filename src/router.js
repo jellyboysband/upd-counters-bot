@@ -10,6 +10,11 @@ router.post('/click', async (ctx) => {
   const clicks = +ctx.request.body.clicks + 1;
   const hash = ctx.request.body.hash;
 
+  if (clicks > 1000 && click % 100 !== 0) {
+    ctx.status = 200;
+    return
+  }
+
   const count = clicks >= 1000 ? `${(clicks / 1000).toFixed(1)}k` : clicks
   const messageData = JSON.parse(await redis.get(`${config.redisPrefix}${hash}`));
   try {
@@ -17,6 +22,7 @@ router.post('/click', async (ctx) => {
   } catch (err) {
     console.error(err)
   }
+  ctx.status = 200;
 });
 
 
